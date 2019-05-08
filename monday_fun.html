@@ -1,17 +1,61 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html>
 
 <head>
     <style>
-        .grabbing {
+        body .grabbing {
             cursor: -webkit-grabbing;
             cursor: grabbing;
+
+            margin: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 25%;
+            background-color: #e5a21b;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+        }
+
+        li a {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        li a {
+            background-color: #f4efde;
+            color: orange;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #555;
+            color: red;
+
+
         }
     </style>
 </head>
 
 <body>
-    <p style="color:Tomato;" class="grabbing">waka waka</p>
-    <p style="background-color:Tomato;" class="grabbing">Pac-Man</p>
+    <ul>
+        <li><a class="active" href="rose.html">Home</a></li>
+        <li><a href="#Major">Special</a></li>
+        <li><a href="monday_fun.html">Monday Assignment</a></li>
+        <li><a href="fun.html">Friday Fun</a></li>
+        <li><a href="doctor.html">Webpage 1</a></li>
+        <li><a href="spicyboy.html">Webpage 2</a></li>
+
+    </ul>
+
+    <div style="margin-left:25%;padding:1px 16px;height:1000px;">
+        <p style="color:Tomato;" class="grabbing">waka waka</p>
+        <p style="background-color:Tomato;" class="grabbing">Pac-Man</p>
 </body>
+
 </html>
